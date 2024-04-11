@@ -48,6 +48,7 @@ def
         junitVersion = "5.9.0",
         restAssured = "4.5.1"
 
+
 dependencies {
     testImplementation (
             "org.junit.jupiter:junit-jupiter-api:$junitVersion",
