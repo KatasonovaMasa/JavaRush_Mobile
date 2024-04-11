@@ -1,7 +1,7 @@
 package mobile;
 
 import com.codeborne.selenide.Configuration;
-import ui.config.WebConfig;
+import mobile.config.WebConfig;
 import help.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import mobile.drivers.BrowserstackDriver;
