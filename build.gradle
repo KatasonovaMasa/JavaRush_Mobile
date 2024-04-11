@@ -39,11 +39,11 @@ def
         slf4jSimpleVersion = "2.0.7",
         commonsIoVersion = "2.11.0",
         javaFakerVersion = "1.0.2",
-        selenideVersion = "7.2.2",
+        selenideVersion = "6.13.0",
         jacksonVersion = "2.14.2",
         lombokVersion = "1.18.22",
         allureVersion = "2.21.0",
-        appiumVersion = "8.4.0",
+        appiumVersion = "8.3.0",
         ownerVersion = "1.0.4",
         junitVersion = "5.8.2",
         restAssured = "4.5.1"
@@ -91,22 +91,8 @@ test {
     useJUnitPlatform()
 }
 
-task JRUI(type: Test) {
-    useJUnitPlatform {
-        maxParallelForks = 25
-        includeTags ("JRUI")
-    }
-}
-
 task JRMobile(type: Test) {
     useJUnitPlatform {
         includeTags "JRMobile"
-    }
-}
-
-task JRApi(type: Test){
-    useJUnitPlatform{
-        maxParallelForks = 25
-        includeTags("JRApi")
     }
 }
