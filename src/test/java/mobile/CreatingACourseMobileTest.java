@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-@Tag("JRMobile")
+//@Tag("JRMobile")
 @Owner("Катасонова Мария")
 @Feature("Автотесты для Mobile")
 @Story("Создание персонального курса")

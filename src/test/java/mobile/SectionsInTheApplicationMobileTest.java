@@ -10,7 +10,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
-@Tag("JRMobile")
+//@Tag("JRMobile")
 @Owner("Катасонова Мария")
 @Story("Разделы в приложении")
 @Feature("Автотесты для Mobile")
