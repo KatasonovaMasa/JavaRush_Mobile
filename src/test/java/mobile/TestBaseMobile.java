@@ -29,10 +29,10 @@ public class TestBaseMobile {
     @BeforeAll
     public static void setup() {
         addListener("AllureSelenide", new AllureSelenide());
-//        Configuration.browser = LocalDriver.class.getName();
-//        if (isRemote) {
+        Configuration.browser = LocalDriver.class.getName();
+        if (isRemote) {
              Configuration.browser = BrowserstackDriver.class.getName();
-//        }
+        }
         Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 10000;
         Configuration.browserSize = null;
