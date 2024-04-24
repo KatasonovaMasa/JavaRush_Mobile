@@ -28,11 +28,13 @@ public class TestBaseMobile {
 
     @BeforeAll
     public static void setup() {
+        Configuration.browser = BrowserstackDriver.class.getName();
+
+//        Configuration.browser = LocalDriver.class.getName();
+//        if (isRemote) {
+
+//        }
         addListener("AllureSelenide", new AllureSelenide());
-        Configuration.browser = LocalDriver.class.getName();
-        if (isRemote) {
-             Configuration.browser = BrowserstackDriver.class.getName();
-        }
         Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 10000;
         Configuration.browserSize = null;
@@ -46,9 +48,9 @@ public class TestBaseMobile {
 
     @AfterEach
     public void afterEach() {
-//        String sessionId = sessionId().toString();
+        String sessionId = sessionId().toString();
 //        if (isRemote) {
-//            Attach.addVideo(sessionId);
+            Attach.addVideo(sessionId);
 //        }
         closeWebDriver();
     }
