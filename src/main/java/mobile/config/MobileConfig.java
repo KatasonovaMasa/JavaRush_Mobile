@@ -7,33 +7,33 @@ import org.aeonbits.owner.Config;
 })
 public interface MobileConfig extends Config {
 
-    @Key("username")
+    @Key("browserstack.username")
     String username();
 
-    @Key("passwordKey")
+    @Key("browserstack.passwordKey")
     String passwordKey();
 
-    @Key("remoteMobileUrl")
+    @Key("browserstack.remoteMobileUrl")
     String remoteMobileUrl();
 
-    @Key("app")
+    @Key("browserstack.app")
     String app();
 
-    @Key("deviceName")
+    @Key("browserstack.deviceName")
     String deviceName();
 
-    @Key("osVersion")
+    @Key("browserstack.osVersion")
     String osVersion();
 
-    @Key("url")
+    @Key("browserstack.url")
     String url();
 
-    @Key("platformName")
+    @Key("browserstack.platformName")
     String platformName();
 
-    @Key("appPackage")
+    @Key("browserstack.appPackage")
     String appPackage();
 
-    @Key("appActivity")
+    @Key("browserstack.appActivity")
     String appActivity();
 }
