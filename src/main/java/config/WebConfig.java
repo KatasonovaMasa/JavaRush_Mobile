@@ -1,4 +1,4 @@
-package mobile.config;
+package config;
 
 import org.aeonbits.owner.Config;
 
@@ -19,7 +19,7 @@ public interface WebConfig extends Config {
     @DefaultValue("2500x1080")
     String getBrowserSize();
 
-    @Key("videoUrl")
+    @Key("browserstack.videoUrl")
     String videoUrl();
 
     @Key("baseUrl")

@@ -1,7 +1,7 @@
-package mobile.steps;
+package steps;
 
 import io.qameta.allure.Step;
-import mobile.pages.CommentsSectionPage;
+import pages.CommentsSectionPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;

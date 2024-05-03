@@ -1,7 +1,7 @@
-package mobile.steps;
+package steps;
 
 import io.qameta.allure.Step;
-import mobile.pages.LikesUnderTheArticlePage;
+import pages.LikesUnderTheArticlePage;
 
 import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Selenide.sleep;

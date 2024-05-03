@@ -1,7 +1,7 @@
-package mobile.steps;
+package steps;
 
 import io.qameta.allure.Step;
-import mobile.pages.AuthorizationTheApplicationPage;
+import pages.AuthorizationTheApplicationPage;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;

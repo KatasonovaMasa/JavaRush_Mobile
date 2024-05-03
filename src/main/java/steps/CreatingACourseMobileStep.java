@@ -1,9 +1,9 @@
-package mobile.steps;
+package steps;
 
 import com.codeborne.selenide.Condition;
 import help.GenerateRandomPage;
 import io.qameta.allure.Step;
-import mobile.pages.CreatingACourseMobilePage;
+import pages.CreatingACourseMobilePage;
 
 import java.time.Duration;
 

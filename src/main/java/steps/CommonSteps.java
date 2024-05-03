@@ -1,7 +1,7 @@
-package mobile;
+package steps;
 
-import mobile.config.AuthConfig;
-import mobile.steps.AuthorizationTheApplicationStep;
+import config.AuthConfig;
+import steps.AuthorizationTheApplicationStep;
 import org.aeonbits.owner.ConfigFactory;
 
 public class CommonSteps {

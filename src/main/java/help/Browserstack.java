@@ -1,6 +1,6 @@
-package mobile.help;
+package help;
 
-import mobile.config.MobileConfig;
+import config.MobileConfig;
 import org.aeonbits.owner.ConfigFactory;
 
 import static io.restassured.RestAssured.given;

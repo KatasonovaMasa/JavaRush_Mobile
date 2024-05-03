@@ -1,12 +1,11 @@
 package mobile;
 
 import com.codeborne.selenide.Configuration;
-import mobile.config.WebConfig;
+import config.WebConfig;
 import help.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
-import mobile.drivers.BrowserstackDriver;
-import mobile.drivers.LocalDriver;
-import mobile.steps.*;
+import drivers.BrowserstackDriver;
+import steps.*;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -42,8 +41,8 @@ public class TestBaseMobile {
 
     @BeforeEach
     public void startDriver() {
-        addListener("AllureSelenide", new AllureSelenide());
         open();
+        addListener("AllureSelenide", new AllureSelenide());
     }
 
     @AfterEach

@@ -1,4 +1,4 @@
-package mobile.config;
+package config;
 
 import org.aeonbits.owner.Config;
 
@@ -34,6 +34,8 @@ public interface MobileConfig extends Config {
     @Key("browserstack.appPackage")
     String appPackage();
 
+    @Key("browserstack.videoUrl")
+    String videoUrl();
     @Key("browserstack.appActivity")
     String appActivity();
 }
