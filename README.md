@@ -1,5 +1,5 @@
 Проект JavaRush Test - это автоматизированный набор тестов для проверки функциональности JavaRush-онлайн курса по обучению JavaRush.
-Он включает в себя API-тесты для взаимодействия с JavaRush Mobile-тесты для проверки пользовательского интерфейса.
+Он включает в себя Mobile-тесты для проверки пользовательского интерфейса.
 
 ## JavaRush
 <img alt="GIPHY" src=".github/sc/javarush.png">
@@ -27,43 +27,7 @@
 </p>
  
 
-Проект представляет собой набор автоматизированных тестов, включающих API-, Mobile- и UI-тесты. Он разделен на следующие модули:
-
-<details>
-  <summary>API-тесты:</summary>
-
-1. **AccessToPostWithoutRegistrationApiTest** - Раздел 'Статьи'.
-    - `checkAccessToPostWithoutRegistrationTest`: параметризованный тест на проверку доступа к информации о статье без регистрации.
-2. **DiscussionsInfoTest** -Раздел 'Отзывы'.
-    - `checkDiscussionsInfo`: получение информации об отзыве.
-    - `checkDiscussionsLikes`: получение количества лайков под отзывом.
-    - `checkDiscussionsComments`: получение комментария под отзывом.
-    - `checkTheJsonSchemeByTheNumberOfLikesUnderAReview`: проверка json схемы по количеству лайков под отзывом. 
-3. **GamesInfoTest** - Раздел 'Игры'.
-    - `checkInfoGameMinesweeper`: информация по игре 'Сапер'.
-    - `checkInfoGameSnake`: информация по игре 'Змейка'.
-    - `checkInfoGameMoonLander`: информация по игре 'Moon Lander'.
-    - `checkGettingInfoAboutGamesOnJavaRush`: получение информации по играм на JavaRush.
-    - `checkTheUserActivitiesJsonSchema`: проверка json схемы игр на javaRush.
-4. **GeneralInfoTest** - Раздел 'О нас'.
-    - `checkGeneralInfo`: получение информации о разделе 'О нас' .
-    - `checkGeneralInfoJsonSchema`: проверка json схемы в разделе 'О нас'.
-5. **InfoInternshipTest** - Раздел 'Стажировка'.
-    - `checkUsersInfoInternship`: получение информации по пользователю о стажировке.
-    - `checkInfoForClientOrInterview`: получение информации по пользователю о собеседовании.
-    - `checkTheUserActivitiesJsonSchema`: проверка json схемы информации по пользователям о собеседованиях.
-6. **NewsActivitiesTest** - Раздел 'Активности'.
-   - `checkReceiptOfUserActivities`: проверка получения активностей пользователя.
-   - `checkRetrievingUserActivitiesThroughALoopThatIteratesThroughObjectsInAnArray`: проверка получения активностей пользователей через цикл, который перебирает объекты в массиве.
-   - `checkReceivingUserActivitiesViaStream`: проверка получения активностей пользователей через stream.
-   - `checkTheUserActivitiesJsonSchema`: проверка json схемы 'Активностей пользователей'.
-7. **UsersInfoTest** - Раздел 'Пользователи'.
-   - `checkUsersOne`: получение информации по пользователю.
-   - `checkUsersTwo`: получение информации по пользователю.
-   - `checkUsersTwo`: получение информации по пользователю.
-   - `checkUsersFour`: получение информации из списка всех пользователей.
-   - `checkAllUsersJsonSchema`: проверка json схемы всех пользователей.
-</details>
+Проект представляет собой набор автоматизированных Mobile- тестов. Он разделен на следующие модули:
 
 <details>
   <summary>Mobile-тесты:</summary>
@@ -80,26 +44,6 @@
    - `addLikeUnderTheArticle`: Добавление лайка.
 5. **SectionsInTheApplicationMobileTest** - Разделы в приложении.
    - `openSectionsInTheApplication`: проверка разделов приложения.
-</details>
-
-<details>
-  <summary>UI-тесты:</summary>
-
-1. **AvatarUploadPageTest** - Загрузка аватара.
-   - `uploadingAnAvatarToYourProfilePhoto`: Загрузка аватара в фото профиля.
-2. **CreatingACourseTest** - Создание персонального курса.
-    - `createdProgrammingCourseWithoutTakingQuestions`: получение курса программирования БЕЗ прохождения вопросов.
-    - `createdProgrammingCourseByPassingTheQuestions`: получение курса программирования ПРИ прохождения вопросов.
-3. **FunctionalityOfTheStartTrainingTest** - Кнопка 'Начать обучение' в 2-х варинтах.
-    - `functionalityOfTheStartTrainingButtonsInTheMenuAtTheEndOfThePage`: кнопка 'Начать обучение' в меню/в конце страницы.
-4.  **IntegrationSocialNetworkTest**  - Интеграция c соцсетями.
-    - `integrationTelegram`: интеграция с Телеграмм.
-    - `integrationYouTube`: интеграция с YouTube.
-5.  **SearchOnSectionsTest** - Поиск в разделах в приложения.
-    - `searchOnAllSections`: поиск 'Тестирования' на всех разделах.
-    - `searchInTheGeneralSection`: поиск 'Тестирования' в общей вкладке.
-6.  **SectionsInTheApplicationTest** - Разделы в приложении.
-   - `openingSectionsInTheApplication`: проверка открытия разделов.
 </details>
 
 ### Локальный запуск
@@ -130,33 +74,27 @@ ${TASK}
 параметрами:
 
 TASK (с какими тегами запускать тесты)
-- `BROWSER` - браузер, по умолчанию chrome.
-- `BROWSER_VERSION` - версия браузера, по умолчанию 100.0.
-- `BROWSER_SIZE` - разрешение экрана (например, "1920x1080").
-- `BASE_URL` - какой адрес открывать для запуска тестов.
-- `REMOTE_URL` - где запускать тесты
+- `test` - тег по умолчанию.
 
 ### Файл test.properties
 
-Для запуска тестов локально на вашем компьютере, вам необходимо добавить файл test.properties в папку ресурсов (test/src/resources/config/). В этом файле необходимо указать следующие свойства:
+Для запуска тестов локально на вашем компьютере, вам необходимо добавить файл test.properties в папку ресурсов (src/main/resources). В этом файле необходимо указать следующие свойства:
 
 ```bash 
 login.JavaRush=логин в приложении
 password.JavaRush=пароль в приложении
-browserVersion=версию браузера
-browserSize=размер браузера
-baseUrl=адрес продукта
-videoUrl=адрес удалённого запуска
-deviceName=модель андройда
-platformName=тип устройства
-osVersion=версия андройда
-url=адрес локального сервера
-appPackage=appPackage мобильного приложения
-appActivity=appActivity мобильного приложения
-username.Browserstack=username
-passwordKey.Browserstack=passwordKey
-remoteMobileUrl.Browserstack=адрес удалённого запуска
-app.Browserstack=app
+
+browserstack.deviceName=модель андройда
+browserstack.platformName=тип устройства
+browserstack.osVersion=версия андройда
+browserstack.url=адрес локального сервера
+browserstack.appPackage=appPackage мобильного приложения
+browserstack.appActivity=appActivity мобильного приложения
+
+browserstack.username=username
+browserstack.passwordKey=passwordKey
+browserstack.remoteMobileUrl=адрес удалённого запуска
+browserstack.app=app
 ```
 
 ### Ссылки и визуализация
