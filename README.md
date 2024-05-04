@@ -364,17 +364,6 @@ app.Browserstack=app
 </details>
 
 <details>
-  <summary>Демонстрационное видео запуска UI тестов</summary>
-
-[Скачать демонстрационное видео](.github/video/UItest.mp4)
-
-[//]: # (https://github.com/KatasonovaMasa/JavaRush_Ui_Mobile_Api/assets/44576709/e1444df1-626a-484b-ad9f-640178605703)
-<p align="center">
-<img title="Selenoid Video" src=".github/video/UItest.gif" width="550" height="350"  alt="video">   
-</p>
-</details>
-
-<details>
   <summary>Демонстрационное видео запуска мобильных тестов</summary>
 
 [Скачать демонстрационное видео](.github/video/MobileTest.mp4)
