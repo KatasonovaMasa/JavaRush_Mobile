@@ -120,7 +120,7 @@ browserstack.app=app
 <details>
   <summary>AllureReport</summary>
 
-[Перейти к отчету в AllureReport](https://jenkins.autotests.cloud/job/JavaRushUiApiMobile/121/allure/#)
+[Перейти к отчету в AllureReport](https://jenkins.autotests.cloud/job/JR/job/JavaRush_Mobile/109/allure/#)
 
 ![Image4](.github/sc/allureReport1.png)
 ![Image5](.github/sc/allureReport2.png)
@@ -129,12 +129,11 @@ browserstack.app=app
 <details>
   <summary>AllureTestOps</summary>
 
-[Перейти к отчету AllureTestOps](https://allure.autotests.cloud/launch/30359/tree/484618?treeId=7152)
+[Перейти к отчету AllureTestOps](https://allure.autotests.cloud/launch/38627/tree?treeId=7152)
 
 ![Image6](.github/sc/allureTestOps1.png)
 ![Image7](.github/sc/allureTestOps2.png)
 ![Image7](.github/sc/allureTestOps3.png)
-![Image7](.github/sc/allureTestOps4.png)
 </details>
 
 <details>
@@ -402,4 +401,3 @@ app.Browserstack=app
    Кликни на изображение
 
 [<img alt="GIPHY" align="center" src=".github/logo/telegram1.png">](https://t.me/QA_marykat)
->>>>>>> origin/mobile
