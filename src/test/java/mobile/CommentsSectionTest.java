@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 import static help.GenerateRandomPage.generateRockStarText;
 
-//@Tag("JRMobile")
+@Tag("JRMobile")
 @Owner("Катасонова Мария")
 @Story("Комментарии")
 @Feature("Автотесты для Mobile")
