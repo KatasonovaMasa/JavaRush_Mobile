@@ -169,4 +169,3 @@ browserstack.app=app
    Кликни на изображение
 
 [<img alt="GIPHY" align="center" src=".github/logo/telegram1.png">](https://t.me/QA_marykat)
-=======
