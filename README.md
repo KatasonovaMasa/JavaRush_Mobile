@@ -282,12 +282,6 @@ browserstack.app=app
 ```bash
 clean
 ${TASK}
--DisRemote=true
--DbaseUrl=${BASE_URL}
--DbrowserSize=${BROWSER_SIZE}
--Dbrowser=${BROWSER}
--Dselenoid=https://user1:1234@selenoid.autotests.cloud/wd/hub
--DbrowserVersion=${BROWSER_VERSION}
 ```
 
 ### Запуск с Jenkins
@@ -361,7 +355,6 @@ app.Browserstack=app
 ![Image6](.github/sc/allureTestOps1.png)
 ![Image7](.github/sc/allureTestOps2.png)
 ![Image7](.github/sc/allureTestOps3.png)
-![Image7](.github/sc/allureTestOps4.png)
 </details>
 
 <details>
