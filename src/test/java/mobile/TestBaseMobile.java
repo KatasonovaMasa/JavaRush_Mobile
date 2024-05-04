@@ -2,6 +2,7 @@ package mobile;
 
 import com.codeborne.selenide.Configuration;
 import config.WebConfig;
+import drivers.LocalDriver;
 import help.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import drivers.BrowserstackDriver;
@@ -28,11 +29,9 @@ public class TestBaseMobile {
     @BeforeAll
     public static void setup() {
         Configuration.browser = BrowserstackDriver.class.getName();
-
-//        Configuration.browser = LocalDriver.class.getName();
-//        if (isRemote) {
-
-//        }
+        Configuration.browser = LocalDriver.class.getName();
+        if (isRemote) {
+        }
         addListener("AllureSelenide", new AllureSelenide());
         Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 10000;
@@ -49,7 +48,7 @@ public class TestBaseMobile {
     public void afterEach() {
         String sessionId = sessionId().toString();
 //        if (isRemote) {
-            Attach.addVideo(sessionId);
+//            Attach.addVideo(sessionId);
 //        }
         closeWebDriver();
     }
