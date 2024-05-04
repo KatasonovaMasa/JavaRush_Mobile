@@ -368,7 +368,7 @@ app.Browserstack=app
 
 [Скачать демонстрационное видео](.github/video/MobileTest.mp4)
 
-[//]: # (https://github.com/KatasonovaMasa/JavaRush_Ui_Mobile_Api/assets/44576709/2c50350f-dd8a-43bf-b7b5-8ab9992afac6)
+[//]: # (https://github.com/KatasonovaMasa/JavaRush_Mobile/assets/44576709/23ea5d13-4094-475f-a88c-9575fcc0924e)
 <p align="center">
 <img title="Browserstack Video" src=".github/video/MobileTest.gif" width="450" height="500"  alt="video">   
 </p>
