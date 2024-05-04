@@ -38,4 +38,7 @@ public interface MobileConfig extends Config {
     String videoUrl();
     @Key("browserstack.appActivity")
     String appActivity();
+    @Key("false")
+    @DefaultValue("isRemote")
+    String isRemote();
 }

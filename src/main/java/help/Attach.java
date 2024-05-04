@@ -1,13 +1,12 @@
 package help;
 
 import com.codeborne.selenide.Selenide;
+import config.MobileConfig;
 import io.qameta.allure.Attachment;
-import config.WebConfig;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -18,7 +17,7 @@ import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
 
-    protected static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
+    protected static MobileConfig config = ConfigFactory.create(MobileConfig.class, System.getProperties());
 
 
     @Attachment(value = "{attachName}", type = "text/plain")

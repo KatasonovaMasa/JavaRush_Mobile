@@ -1,7 +1,7 @@
 package mobile;
 
 import com.codeborne.selenide.Configuration;
-import config.WebConfig;
+import config.MobileConfig;
 import drivers.LocalDriver;
 import help.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -17,7 +17,7 @@ import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 
 public class TestBaseMobile {
 
-    protected static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
+    protected static MobileConfig config = ConfigFactory.create(MobileConfig.class, System.getProperties());
     static boolean isRemote = Boolean.parseBoolean(System.getProperty("isRemote", config.isRemote()));
     SectionTheApplicationMobileStep sectionTheApplicationMobileStep = new SectionTheApplicationMobileStep();
     AuthorizationTheApplicationStep authorizationTheApplicationStep = new AuthorizationTheApplicationStep();
@@ -47,9 +47,9 @@ public class TestBaseMobile {
     @AfterEach
     public void afterEach() {
         String sessionId = sessionId().toString();
-//        if (isRemote) {
-//            Attach.addVideo(sessionId);
-//        }
+        if (isRemote) {
+            Attach.addVideo(sessionId);
+        }
         closeWebDriver();
     }
 }
