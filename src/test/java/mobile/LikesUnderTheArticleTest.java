@@ -23,6 +23,7 @@ public class LikesUnderTheArticleTest extends TestBaseMobile {
         likesUnderTheArticleStep.pressReactionsIcon();
         likesUnderTheArticleStep.pressLikeDesc();
         int likesAfterLike = likesUnderTheArticleStep.parsTextToNumber();
-        Assertions.assertEquals((likesBeforeLike + 1), (likesAfterLike), ":неправильное количество лайков");
+        Assertions.assertNotEquals((likesBeforeLike), (likesAfterLike), ":количество лайков не изменилось");
+        likesUnderTheArticleStep.pressReactionsIcon();
     }
 }

@@ -111,7 +111,7 @@ browserstack.app=app
 <details>
   <summary>Jenkins</summary>
 
-[Перейти к сборке в Jenkins](https://jenkins.autotests.cloud/job/JavaRushUiApiMobile/)
+[Перейти к сборке в Jenkins](https://jenkins.autotests.cloud/job/JR/job/JavaRush_Mobile/)
 
 ![Image2](.github/sc/jenkins1.png)
 ![Image3](.github/sc/jenkins2.png)
