@@ -137,7 +137,7 @@ browserstack.app=app
 </details>
 
 <details>
-  <summary>run BrowserStack</summary>
+  <summary>запуски в BrowserStack</summary>
 
 ![Image10](.github/sc/BrowserStack1.png)
 ![Image10](.github/sc/BrowserStack2.png)
