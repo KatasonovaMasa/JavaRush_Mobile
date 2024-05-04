@@ -29,8 +29,8 @@ public class TestBaseMobile {
     @BeforeAll
     public static void setup() {
         Configuration.browser = BrowserstackDriver.class.getName();
-        Configuration.browser = LocalDriver.class.getName();
         if (isRemote) {
+            Configuration.browser = LocalDriver.class.getName();
         }
         addListener("AllureSelenide", new AllureSelenide());
         Configuration.pageLoadStrategy = "eager";
