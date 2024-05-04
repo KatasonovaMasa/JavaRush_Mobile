@@ -349,7 +349,14 @@ app.Browserstack=app
 
 ![Image6](.github/sc/allureTestOps1.png)
 ![Image7](.github/sc/allureTestOps2.png)
-![Image7](.github/sc/allureTestOps3.png)
+![Image8](.github/sc/allureTestOps3.png)
+</details>
+
+<details>
+  <summary>run BrowserStack</summary>
+
+![Image10](.github/sc/BrowserStack1.png)
+![Image10](.github/sc/BrowserStack2.png)
 </details>
 
 <details>
